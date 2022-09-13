@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
-import vuexPersistedstate from '../../../../dist/index'
-
+import vuexPersistedstate from 'vuex-plugin-persistedstate'
 export default createStore({
   state: {
     msg: 'hello, world'

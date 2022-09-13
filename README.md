@@ -16,13 +16,13 @@ Persist and rehydrate your Vuex state between page reloads.
 ## Install
 
 ```shell
-npm install --save vuex-persistedstate
+npm install --save vuex-plugin-persistedstate
 ```
 
 The [UMD](https://github.com/umdjs/umd) build is also available on [unpkg](https://unpkg.com/):
 
 ```html
-<script src="https://unpkg.com/vuex-persistedstate/dist/vuex-persistedstate.umd.js"></script>
+<script src="https://unpkg.com/vuex-plugin-persistedstate/dist/index.js"></script>
 ```
 
 
@@ -43,25 +43,42 @@ it only supports [vuex 4](https://vuex.vuejs.org/)。
 
 
 
+## Examples
+
+Check out a basic example on [CodeSandbox](https://codesandbox.io).
+
+[![Edit vuex-persistedstate](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vuex-plugin-persistedstate-o948p7?file=/src/App.vue)
+
+
+
+
+
 ## Options
 
 ```ts
-interface Options<State> {
-  key?: string;
-  paths?: string[];
-  reducer?: (state: State, paths: string[]) => object;
-  subscriber?: (
-    store: Store<State>
-    ) => (handler: (mutation: any, state: State) => void) => void;
-  storage?: Storage;
-  getState?: (key: string, storage: Storage) => any;
-  setState?: (key: string, state: any, storage: Storage) => void;
-  filter?: (mutation: MutationPayload) => boolean;
-  arrayMerger?: (state: any[], saved: any[]) => any;
-  rehydrated?: (store: Store<State>) => void;
-  fetchBeforeUse?: boolean;
-  overwrite?: boolean;
-  assertStorage?: (storage: Storage) => void | Error;
+export interface Options<State> {
+  /**
+   * localStorage saved key
+   */
+  key: string
+  /**
+   * cached module name
+   * Do not pass means cache all
+   * pass only the specified cache
+   */
+  paths: string[]
+  /**
+   * storage
+   */
+  storage: Storage
+  /**
+   * Whether to prefetch data
+   */
+  fetchBeforeUse: boolean
+  /**
+   * Default method of prefetching data
+   */
+  fetchBeforeUseFn: (key: string, storage: Storage) => any
 }
 ```
 

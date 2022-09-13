@@ -11,6 +11,9 @@ export interface Options<State> {
    * pass only the specified cache
    */
   paths: string[]
+  /**
+   * storage
+   */
   storage: Storage
   /**
    * Whether to prefetch data

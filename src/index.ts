@@ -4,7 +4,7 @@ import { matchPaths } from './core/persistedstate'
 
 let catchData: object = {}
 
-export default function <State>({
+export default function VuexPersistedstate<State>({
   key = defaultOptions.key,
   paths = defaultOptions.paths,
   storage = defaultOptions.storage,

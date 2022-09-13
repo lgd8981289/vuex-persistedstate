@@ -1,8 +1,11 @@
 {
-  "name": "vuex-persistedstate",
-  "version": "4.2.0",
+  "name": "vuex-plugin-persistedstate",
+  "version": "1.0.4",
   "description": "Persist and rehydrate your Vuex state between page reloads.",
-  "main": "rollup.config.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "example": "examples"
   },
@@ -29,9 +32,13 @@
     "type": "git",
     "url": "git+https://github.com/lgd8981289/vuex-persistedstate.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vuex",
+    "vuex-plugin",
+    "vuex-persistedstate",
+    "vuex-plugin-persistedstate"
+  ],
+  "author": "LGD_Sunday",
   "bugs": {
     "url": "https://github.com/lgd8981289/vuex-persistedstate/issues"
   },
