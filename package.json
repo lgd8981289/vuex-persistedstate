@@ -1,0 +1,39 @@
+{
+  "name": "vuex-persistedstate",
+  "version": "4.2.0",
+  "description": "Persist and rehydrate your Vuex state between page reloads.",
+  "main": "rollup.config.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "tscli": "^0.1.2-alpha.21.03",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3",
+    "vue": "^3.2.39",
+    "vuex": "^4.0.2"
+  },
+  "peerDependencies": {
+    "vuex": "^3.0 || ^4.0"
+  },
+  "scripts": {
+    "dev": "tsup --watch --sourcemap",
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgd8981289/vuex-persistedstate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgd8981289/vuex-persistedstate/issues"
+  },
+  "homepage": "https://github.com/lgd8981289/vuex-persistedstate#readme"
+}

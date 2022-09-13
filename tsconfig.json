@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"rootDir": ".",
+		"strict": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"target": "es5",
+		"resolveJsonModule": true,
+		"downlevelIteration": true,
+		"module": "esnext",
+		"removeComments": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"lib": ["esnext", "dom"],
+	},
+	"include": [
+		"src"
+	]
+}
