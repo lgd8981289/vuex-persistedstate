@@ -39,9 +39,7 @@ const store = createStore({
 });
 ```
 
-it only supports [vuex 4](https://vuex.vuejs.org/)。
-
-
+Compatible with vuex 3 && `vuex 4`
 
 ## Examples
 

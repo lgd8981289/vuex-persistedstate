@@ -1,6 +1,6 @@
 {
   "name": "vuex-plugin-persistedstate",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Persist and rehydrate your Vuex state between page reloads.",
   "license": "MIT",
   "main": "dist/index.js",
